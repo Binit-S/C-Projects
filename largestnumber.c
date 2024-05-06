@@ -1,18 +1,22 @@
-#include <stdio.h>
+#include<stdio.h>
+int main(){
+    //Sum of numbers in the array
+    int i,n,largestnum;
+    printf("Enter the no. variables");
+    scanf("%d",&n);
+    int array[n];
 
+    for (i=0 ; i<n ; i++ ){
+        printf("Enter the number");
+        scanf("%d",&array[i]);
+    }
+    largestnum = array[0];
 
-void main() {
-    int x,y,z;
-    printf("Enter the numbers");
-    scanf("%d%d%d",&x,&y,&z);
+    for (i=0; i<n ; i++ ){
+        if (array[i]>largestnum){
+            largestnum = array[i];
+        }
+    }
+    printf("The largest number is %d",largestnum);
 
-    if(x>=y && x>=z){
-        printf("%d is the largest number",x);
-    }
-    else if (y>=x && y>=z){
-        printf("%d is the largest number",y);
-    }
-    else{
-        printf("%d is the largest",z);
-    }
-    return;}
+}
