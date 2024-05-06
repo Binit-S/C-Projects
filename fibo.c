@@ -2,10 +2,15 @@
 //fibonacci
 int main() {
     int w,x,y,z;
+    
     printf("print the first two numbers");
     scanf("%d%d",&x,&y);
-    printf("Times");
+
+    
+    printf("Number of Times");
     scanf("%d",&z);
+
+    
     int i;
     for (i=0;i<z;i++){
         w=x+y;
